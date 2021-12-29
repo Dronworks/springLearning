@@ -4,4 +4,13 @@ public class BaseballCoach implements Coach {
 	
 	private FortuneService fortuneService;
 	
-	public BaseballCoach(FortuneService fortuneSe
+	public BaseballCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getDayliPractice() {
+		return "Play for 30 minutes";
+	}
+
+}
