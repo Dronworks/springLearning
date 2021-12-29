@@ -9,9 +9,8 @@ public class CoachSpringApplication {
 		ClassPathXmlApplicationContext springContext =
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		Coach coach = springContext.getBean("myCoach", Coach.class);
-		Coach oldCoach = springContext.getBean("myCoachOld", Coach.class);
 		System.out.println(coach.getDayliPractice());
-		System.out.println(oldCoach.getDayliPractice());
+		System.out.println(coach.getDayliFortune());
 		springContext.close();
 		
 	}
