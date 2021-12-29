@@ -4,6 +4,9 @@ public class TennisCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
+	public TennisCoach() {
+	}
+
 	public TennisCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
