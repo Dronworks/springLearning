@@ -1,6 +1,8 @@
 package com.luv2code.springdemo;
 
-public class BaseballCoach implements Coach {
+import org.springframework.beans.factory.DisposableBean;
+
+public class BaseballCoach implements Coach, DisposableBean {
 	
 	private FortuneService fortuneService;
 	
@@ -16,6 +18,11 @@ public class BaseballCoach implements Coach {
 	@Override
 	public String getDayliFortune() {
 		return this.fortuneService.getFortune();
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Destroying: " + this);
 	}
 
 }

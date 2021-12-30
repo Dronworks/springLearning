@@ -17,5 +17,13 @@ public class RunnerCoach implements Coach {
 	public String getDayliFortune() {
 		return this.fortuneService.getFortune();
 	}
+	
+	private void init() {
+		System.out.println("Initting Runner");
+	}
+	
+	private void afterDestroy() {
+		System.out.println("During destroy Runner");
+	}
 
 }
