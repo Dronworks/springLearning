@@ -1,0 +1,28 @@
+package com.luv2code.springdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class TennisCoach implements Coach {
+	
+	@Qualifier("happyFortuneService")
+	private FortuneService fortuneService;
+	
+	@Autowired
+	public TennisCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
+	@Override
+	public String getDayliWorkout() {
+		return "Practice your backend volley";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		return fortuneService.getFortune();
+	}
+
+}

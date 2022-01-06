@@ -1,0 +1,10 @@
+package com.luv2code.springdemo;
+
+public class HappyFortuneService implements Coach {
+
+	@Override
+	public String getDayliWorkout() {
+		return "Luck is in the Air!";
+	}
+
+}

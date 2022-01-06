@@ -1,0 +1,25 @@
+package com.luv2code.springdemo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class KickboxCoach implements Coach {
+	
+	private FortuneService fortuneService;
+
+	@Override
+	public String getDayliWorkout() {
+		return "Kick some kids for fun";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		return fortuneService.getFortune();
+	}
+	
+	@Autowired
+	public void serFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+
+}

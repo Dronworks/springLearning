@@ -1,0 +1,27 @@
+package com.luv2code.springdemo;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class FileFortuneService implements FortuneService {
+
+	private List<String> fortunes;
+	{
+		try (Stream<String> lines = Files.lines(Paths.get("fortunes.txt"))) {
+			fortunes = lines.collect(Collectors.toList());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}		
+	
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

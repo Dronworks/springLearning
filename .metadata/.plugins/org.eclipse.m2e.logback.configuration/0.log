@@ -1,0 +1,13 @@
+2021-12-27 14:06:22,886 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2021-12-29 13:30:58,615 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-12-29 14:40:30,422 [Worker-2: Fetching remote refs from ssh://github.com/Dronworks/springLearning.git] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2021-12-29 14:40:30,649 [Worker-2: Fetching remote refs from ssh://github.com/Dronworks/springLearning.git] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2021-12-29 14:40:33,967 [sshd-JGitSshClient[71b9eb0d]-nio2-thread-2] WARN  o.e.j.i.t.sshd.JGitClientSession - exceptionCaught(JGitClientSession[dron@github.com/140.82.121.3:22])[state=Opened] SshException: Server key did not validate
+2021-12-29 14:40:34,009 [sshd-JGitSshClient[71b9eb0d]-nio2-thread-2] INFO  o.e.j.i.t.sshd.JGitClientSession - Disconnecting(JGitClientSession[dron@github.com/140.82.121.3:22]): SSH2_DISCONNECT_HOST_KEY_NOT_VERIFIABLE - Server key did not validate
+2021-12-29 18:54:26,521 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2021-12-29 20:02:46,751 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-12-30 19:26:45,780 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2021-12-30 20:08:51,701 [Worker-8: Push to proj1 - origin] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2021-12-30 20:08:51,881 [Worker-8: Push to proj1 - origin] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory using Nio2ServiceFactoryFactory
+2022-01-04 12:34:29,971 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-01-04 12:34:31,347 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.

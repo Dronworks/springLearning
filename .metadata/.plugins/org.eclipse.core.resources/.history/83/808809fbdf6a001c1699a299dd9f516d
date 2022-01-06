@@ -1,0 +1,23 @@
+package com.dronworks;
+
+import com.luv2code.springdemo.Coach;
+
+public class ExCoach implements Coach {
+	
+	private Fortune fortune;
+	
+	public ExCoach(Fortune fortune) {
+		this.fortune = fortune;
+	}
+
+	@Override
+	public String getDayliWorkout() {
+		return "Do some excercise";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		return fortune.getFortune();
+	}
+
+}

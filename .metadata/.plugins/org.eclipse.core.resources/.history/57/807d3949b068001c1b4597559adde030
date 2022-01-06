@@ -1,0 +1,15 @@
+package com.luv2code.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class SetterDomoApp {
+
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext springContext =
+				new ClassPathXmlApplicationContext("applicationContext.xml");
+		Coach coach = springContext.getBean("myCricketCoach", Coach.class);
+		System.out.println(coach.getDayliFortune());
+		springContext.close();
+	}
+
+}

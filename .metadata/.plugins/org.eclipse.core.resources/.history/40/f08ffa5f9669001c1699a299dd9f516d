@@ -1,0 +1,12 @@
+package com.luv2code.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanScopeDemo {
+	
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext springContext =
+				new ClassPathXmlApplicationContext("beanscope-applicationContext.xml");
+	}
+
+}

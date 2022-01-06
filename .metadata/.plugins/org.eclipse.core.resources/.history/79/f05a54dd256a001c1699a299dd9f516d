@@ -1,0 +1,20 @@
+package com.luv2code.springdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class FieldCoach implements Coach {
+	
+	@Autowired
+	private FortuneService fortuneService;
+
+	@Override
+	public String getDayliWorkout() {
+		return "Do some field investigation";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		return fortuneService.getFortune();
+	}
+
+}

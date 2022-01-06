@@ -1,0 +1,19 @@
+package com.dronworks;
+
+import com.luv2code.springdemo.Coach;
+
+public class ExCoach implements Coach {
+
+	@Override
+	public String getDayliWorkout() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDayliFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.dronworks;
+
+import com.luv2code.springdemo.FortuneService;
+
+public class StupidFortune implements Fortune {
+
+	@Override
+	public String getFortune() {
+		return "You will find a piece of old gum today!";
+	}
+
+}

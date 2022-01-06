@@ -1,0 +1,16 @@
+package com.luv2code.springdemo;
+
+public class CricketCoach implements Coach {
+
+	@Override
+	public String getDayliPractice() {
+		return "Play cricket for an hour";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

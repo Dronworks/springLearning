@@ -1,0 +1,26 @@
+package com.luv2code.springdemo;
+
+public class CricketCoach implements Coach {
+
+	private FortuneService fortuneService;
+	
+	public CricketCoach() {
+		System.out.println("Building CrictetCoach");
+	}
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("Setting fortune");
+		this.fortuneService = fortuneService;
+	}
+
+	@Override
+	public String getDayliPractice() {
+		return "Play cricket for an hour";
+	}
+
+	@Override
+	public String getDayliFortune() {
+		return "Cricket fortune: " + fortuneService.getFortune();
+	}
+
+}

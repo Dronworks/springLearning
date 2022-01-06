@@ -1,0 +1,13 @@
+package com.dronworks;
+
+import com.luv2code.springdemo.FortuneService;
+
+public class StupidFortune implements FortuneService {
+
+	@Override
+	public String getFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

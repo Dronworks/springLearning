@@ -1,0 +1,10 @@
+package com.luv2code.springdemo;
+
+public class BaseballCoach implements Coach {
+
+	@Override
+	public String getDayliPractice() {
+		return "Play for 30 minutes";
+	}
+
+}
