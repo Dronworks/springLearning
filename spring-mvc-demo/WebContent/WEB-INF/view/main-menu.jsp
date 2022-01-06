@@ -5,8 +5,11 @@
 	<hr>
 	<a href="showForm">Submit form</a>
 	<hr>
-	<a href="hello/showForm">Submit form</a>
-	
+	<a href="hello/showForm">Hello world form</a>
+	<hr>
+	<a href="student/showForm">Student form</a>
+	<hr>
+	<a href="customer/showForm">Customer form</a>
 
 </body>
 </html>
